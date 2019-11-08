@@ -1,4 +1,4 @@
-#description
+# description
 voici mes fichiers d'examen du 2019-11-08
  
 * ex01 du script shell
