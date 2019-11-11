@@ -4,7 +4,7 @@ def division(a,b):
 
     if b == 0:
        print("sorry cannot divide by zero")
-       print("0")
+       return 0
     else:
         return a/b
 
