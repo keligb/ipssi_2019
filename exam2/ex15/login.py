@@ -2,14 +2,20 @@
 
 import hashlib
 import sys
+from hmac import compare_digest
 
+def compare_pass(argv1):
+    password = "ipssi"
+    password2 = argv1
+    mdp = hashlib.md5(password.encode('utf8')).hexdigest()
+    mdp2 = hashlib.md5(password2.encode('utf8')).hexdigest()
 
-def compare_pass(mdp):   
-    
+    print("md5 \"ipssi\": " + mdp)
+    print("md5   pass : " + mdp2)
 
-    if sys.argv[1] != mdp:
+    if mdp == mdp2:
+        print("login ok")
+        return True
+    else: 
         print("login failed")
         return False
-    else:
-        print("login OK")
-        return True

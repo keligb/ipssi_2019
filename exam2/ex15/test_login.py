@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
 from login import compare_pass
-mdp="ipssi"
+from sys import argv
 
-compare_pass(mdp)
+compare_pass(argv[1])
