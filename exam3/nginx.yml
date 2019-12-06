@@ -1,0 +1,4 @@
+install_ansible:
+  role_name: nginx
+  descripton: Install nginx
+  install: apt install nginx
